@@ -56,7 +56,7 @@
             </div>
         </div>
         <div class="col-12 text-center jumbotron" style="text-align: center; padding-left: 32%; padding-bottom: 5%;">
-            <div class="bg-dark" style="width:60%; height:autopx; padding:4%; border-radius: 20px; max-width:100%;">
+            <div class="frees bg-dark" style="width:60%; height:auto; padding:4%; border-radius: 20px; max-width:100%;">
              <div><h3 style="color: white; font-size: 1.9vw;">Growth starts <span class="text-success">here</span></h3></div>
              <div><P style="color: white; font-size: 1.3vw;">set your child up for success with Edutech,book a free trail today!</P></div>
              <div><button class="btn btn-outline-success" style="font-size: 1.5vw;">Set a free class</button></div>
@@ -175,6 +175,11 @@
     
 </body>
 <style>
+    @media screen and (max-width: 800px) {
+        .navbar,.head,button,input[type=text],input[type=search],input[type=submit],.form-control{
+        width: 100%; 
+        }
+    }
     .head{
         width: 100%;
         height: 450px;
@@ -195,11 +200,22 @@
     .foot a{
         text-decoration: none;
     }
-    @media screen and (max-width: 800px) {
-     .navbar,.head,button,input[type=text],input[type=search],input[type=submit],.form-control{
-    width: 100%; 
-  }
-}
+    .card:hover{
+        border-left: 5px solid gray;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        animation: floating 1s;
+        transition: 1s;
+    }
+    .frees:hover{
+        box-shadow: 0 25px 30px rgba(0,0,0,0.25), 0 15px 15px rgba(0,0,0,0.22);
+
+    }
+    @keyframes floating{
+        0%{top:0px;}
+        50%{top:3px;}
+        100%{top:0px;}
+    }
+ 
   
 </style>
 <script>
